@@ -25,35 +25,95 @@
 
     <!-- Video Player -->
     <section class="player">
-<video autoplay controls muted width="30%" height="100%" src="Video/video.mp4"></video>
+      <video
+        autoplay
+        controls
+        muted
+        width="30%"
+        height="100%"
+        src="Video/video.mp4"
+      ></video>
     </section>
+
     <!-- Video Info -->
     <section class="info">
-        <div class="metadate">
-            <ul class="hashtags">
-                <li>#자연</li>
-                <li>#좋아</li>
-                <li>#시원</li>
-            </ul>
-            <div class="titleAndButton">
-                <span class="title">
-                    Test Video (시원함 주의)
-                </span>
-                <button class="morebtn">
-                    <i class="fas fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="views">
-                
-            </div>
+      <!-- Meta Date -->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#자연</li>
+          <li>#좋아</li>
+          <li>#시원</li>
+        </ul>
+        <div class="titleAndButton">
+          <span class="title"> Test Video (시원함 주의) </span>
+          <button class="morebtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
         </div>
-        <div class="actions">
-
+        <div class="views">
+          <span class="views">조회수 1,000,000회</span>
+          <span class="views"> ∙ 최초공개: 2022.8.22.</span>
         </div>
-        <div class="channel">
-            
+      </div>
+      <!-- actions -->
+      <div class="actions">
+        <li>
+          <button><i class="fas fa-thumbs-up"></i></button>
+        </li>
+        <li>
+          <button><i class="fas fa-thumbs-down"></i></button>
+        </li>
+        <li>
+          <button><i class="fas fa-share"></i></button>
+        </li>
+        <li>
+          <button><i class="fas fa-plus"></i></button>
+        </li>
+        <li>
+          <button><i class="fab fa-font-awesome-flag"></i></button>
+        </li>
+      </div>
+      <!-- channel -->
+      <div class="channel">
+        <div class="metadata">
+          <img src="image/image.jpg" alt="">
+          <div class="info">
+            <span class="name">피곤한아이</span>
+            <span class="subscribers">구독자 100만명</span>
+          </div>
         </div>
+        <button class="subscribe">subscribe</button>
+      </div>
     </section>
-    <section class="upNext"></section>
+    <!-- upNext -->
+    <section class="upNext">
+      <span class="title">Up next</span>
+      <ul>
+        <li class="item">
+          <img src="image/book1.jpg" alt="">
+          <div class="info">
+            <span id="title">책 리뷰 : 복잡계 세상에서의 투자</span></div>
+            <span class="name">피곤한아이</span>
+            <span class="views"> 조회수 15만회</span>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <li class="item">
+          <img src="image/book2.jpg" alt="">
+          <div class="info">
+            <span id="title">책 리뷰 : 전설로 떠나는 월가의 영웅</span></div>
+            <span class="name">피곤한아이</span>
+            <span class="views"> 조회수 32만회</span>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <li class="item">
+          <img src="image/book3.jpg" alt="">
+          <div class="info">
+            <span id="title">책 리뷰 : 현명한 투자자</span></div>
+            <span class="name">피곤한아이</span>
+            <span class="views"> 조회수 11만회</span>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
