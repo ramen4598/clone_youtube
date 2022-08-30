@@ -41,6 +41,7 @@ button, button:focus {
     background-color: var(--white-color);
 }
 
+
 /* header */
 header {
     display: flex;
@@ -76,26 +77,26 @@ header .icons .fa-search {
     max-height: 500px;
 }
 
-.info {
+body .infoAndUpNext > .info {
     padding: var(--padding);
 }
 
-.info .metadata .hashtags {
+body .infoAndUpNext > .info .metadata .hashtags {
     display: flex;
     font-size: var(--font-small);
     color: var(--blue-color);
 }
 
-.info .metadata .hashtages li {
+body .infoAndUpNext > .info .metadata .hashtages li {
     margin-right: var(--padding);
 }
 
-.info .metadata .titleAndButton {
+body .infoAndUpNext > .info .metadata .titleAndButton {
     display: flex;
     justify-content: space-between;
 }
 
-.info .metadata .titleAndButton .title {
+body .infoAndUpNext > .info .metadata .titleAndButton .title {
     font-size: var(--font-medium);
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -103,37 +104,37 @@ header .icons .fa-search {
     overflow: hidden;
 }
 
-.info .metadata .titleAndButton .moreBtn {
+body .infoAndUpNext > .info .metadata .titleAndButton .moreBtn {
     height: 100%;
 }
 
-.info .views {
+body .infoAndUpNext > .info .views {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: var(--font-small);
     color: var(--grey-dark-color);
 }
 
-.info .actions {
+body .infoAndUpNext > .info .actions {
     display: flex;
     justify-content:  space-around;
     margin: var(--padding) 0;
 }
 
-.info .actions button {
+body .infoAndUpNext > .info .actions button {
     display: flex;
     flex-direction: column;
     font-size: var(--font-small);
     color: var(--grey-dark-color);
 }
 
-.info .actions button i {
+body .infoAndUpNext > .info .actions button i {
     margin: 0 auto;
     margin-bottom: calc(var(--padding)/2);
     font-size: var(--font-icon);
 }
 
-.info .actions button i.active {
+body .infoAndUpNext > .info .actions button i.active {
     color: var(--blue-color);
 }
 
@@ -153,7 +154,7 @@ header .icons .fa-search {
     width: var(--avatar-size);
     height: var(--avatar-size);
     border-radius: 50%;
-    /* margin: auto; */
+    margin: var(--padding);
 }
 
 .channel .metadata .info {
@@ -189,6 +190,63 @@ header .icons .fa-search {
 
 .upNext .item {
     display: flex;
+    margin: var(--padding);
 }
 
-/* 41 min */
+.upNext .item .img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.upNext .item .img {
+    flex: 1 1 35%;
+    aspect-ratio: 16 / 9;
+    background-color: var(--black-dark-color);
+    text-align: center;
+    margin-right: var(--padding);
+}
+
+.upNext .item .info {
+    flex: 1 1 60%;
+}
+
+
+.upNext .item .moreBtn {
+    flex: 1 1 5%;
+}
+
+.upNext .item .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.upNext .item .info .title {
+    font-size: var(--font-small);
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 786px) {
+    .infoAndUpNext{
+        display: flex;
+        flex-direction: row;
+        margin: var(--padding) 0;
+    }
+
+    .infoAndUpNext .info {
+        flex: 1 1 60%;
+    }
+
+    .infoAndUpNext .upNext {
+        flex: 1 1 40%;
+    }
+}

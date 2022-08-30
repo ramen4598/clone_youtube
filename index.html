@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <!-- css -->
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Youtube</title>
     <script
       src="https://kit.fontawesome.com/1eee325ae5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <!-- header -->
@@ -35,91 +39,104 @@
         autoplay
         controls
         muted
-        width="30%"
-        height="100%"
         src="Video/video.mp4"
       ></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-      <!-- Meta Date -->
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#자연</li>
-          <li>#좋아</li>
-          <li>#시원</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title"> Test Video (시원함 주의)(동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세) </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </div>
-        <div class="views">
-          <span class="views">조회수 1,000,000회</span>
-          <span class="views"> ∙ 최초공개: 2022.8.22.</span>
-        </div>
-      </div>
-      <!-- actions -->
-      <ul class="actions">
-        <li>
-          <button><i class="active fas fa-thumbs-up"></i><span>1k</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-share"></i><span>Share</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-plus"></i><span>Save</span></button>
-        </li>
-        <li>
-          <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
-        </li>
-      </ul>
-      <!-- channel -->
-      <div class="channel">
+    <div class="infoAndUpNext">
+      <!-- Video Info -->
+      <section class="info">
+        <!-- Meta Date -->
         <div class="metadata">
-          <img src="image/image.jpg" alt="">
-          <div class="info">
-            <span class="name">피곤한아이</span>
-            <span class="subscribers">구독자 100만명</span>
+          <ul class="hashtags">
+            <li>#자연</li>
+            <li>#좋아</li>
+            <li>#시원</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title">
+              Test Video (시원함 주의)(동해물과 백두산이 마르고 닳도록 하느님이
+              보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로
+              길이 보전하세)
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="views">
+            <span class="views">조회수 1,000,000회</span>
+            <span class="views"> ∙ 최초공개: 2022.8.22.</span>
           </div>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
-    <!-- upNext -->
-    <section class="upNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="item">
-          <img src="image/book1.jpg" alt="">
-          <div class="info">
-            <span id="title">책 리뷰 : 복잡계 세상에서의 투자</span></div>
-            <span class="name">피곤한아이</span>
-            <span class="views"> 조회수 15만회</span>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        <!-- actions -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>1k</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- channel -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="image/image.jpg" alt="" />
+            <div class="info">
+              <span class="name">피곤한아이</span>
+              <span class="subscribers">구독자 100만명</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
         </div>
-        <li class="item">
-          <img src="image/book2.jpg" alt="">
-          <div class="info">
-            <span id="title">책 리뷰 : 전설로 떠나는 월가의 영웅</span></div>
-            <span class="name">피곤한아이</span>
-            <span class="views"> 조회수 32만회</span>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </div>
-        <li class="item">
-          <img src="image/book3.jpg" alt="">
-          <div class="info">
-            <span id="title">책 리뷰 : 현명한 투자자</span></div>
-            <span class="name">피곤한아이</span>
-            <span class="views"> 조회수 11만회</span>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-      </ul>
-    </section>
+      </section>
+      <!-- upNext -->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="image/book1.jpg" alt="" /></div>
+            <div class="info">
+              <span id="title">책 리뷰 : 복잡계 세상에서의 투자</span>
+              <span class="name">피곤한아이</span>
+              <span class="views"> 조회수 15만회</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+
+          <li class="item">
+            <div class="img"><img src="image/book2.jpg" alt="" /></div>
+            <div class="info">
+              <span id="title">책 리뷰 : 전설로 떠나는 월가의 영웅</span>
+              <span class="name">피곤한아이</span>
+              <span class="views"> 조회수 32만회</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+
+          <li class="item">
+            <div class="img"><img src="image/book3.jpg" alt="" /></div>
+            <div class="info">
+              <span id="title">책 리뷰 : 현명한 투자자</span>
+              <span class="name">피곤한아이</span>
+              <span class="views"> 조회수 11만회</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
